@@ -100,7 +100,6 @@ df['Thời gian khai báo sức khỏe gần nhất'] = df['Thời gian khai bá
 print("\nDữ liệu mẫu của tất cả các cột:")
 print(df.head(10))
 print("Số lượng hàng sau khi làm sạch:", len(df))
-# Thử lưu bằng openpyxl nếu xlsxwriter không hoạt động
 try:
     df.to_excel('du_lieu_sach.xlsx', index=False, engine='openpyxl')
     print("Đã lưu file 'du_lieu_sach.xlsx' thành công bằng openpyxl!")
